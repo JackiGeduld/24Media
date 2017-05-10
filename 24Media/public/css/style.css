@@ -1,5 +1,6 @@
 
 
+
 /*
 Author: Xpeedstudio
 Author URI: http://xpeedstudio.com
@@ -163,6 +164,7 @@ a {
 
 p {
     margin: 0 0 15px;
+
 }
 
 .clear {
@@ -218,8 +220,8 @@ h4,
 h5,
 h6 {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
-    color:#1a1a1a;
+font-family: 'Marvel', sans-serif;
+ color:#1a1a1a;
     margin-bottom: 10px;
 }
 
@@ -238,6 +240,7 @@ h3 {
 h4 {
     font-size: 1.6rem;
     line-height: 2.2rem;
+
 }
 h5 {
     font-size: 1.125rem;
@@ -316,13 +319,17 @@ ul{
 /*all overlay*/
 
 .overlay {
-    background-color: rgba(41, 39, 34, 0.50);
-    width: 100%;
-    height:100%;
-    position: absolute;
-    left:0;
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
     top: 0;
-
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 
@@ -379,9 +386,9 @@ Button
 }
 .btn-primary{
     color: #fff;
-    background-color: #00a885;
+    background-color: #FF8C00;
     border:1px solid;
-    border-color: #00a885;
+    border-color: #FF8C00;
 
 }
 .btn-primary:hover{
@@ -664,14 +671,14 @@ textarea::-ms-input-placeholder{
 }
 
 .culmn{
-    width:82.0%;
+    width:80%;
     overflow: hidden;
 }
 .fix{
     overflow: hidden;
 }
 /*heading title all area*/
-.head_title{
+.head_title {
     padding-bottom: 2.143rem;
     overflow: hidden;
 }
@@ -691,7 +698,7 @@ textarea::-ms-input-placeholder{
 
 /*Preloader*/
 #loading{
-    background-color: #00a885;
+    background-color: #FF8C00;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -700,6 +707,9 @@ textarea::-ms-input-placeholder{
     top: 0px;
     left:0;
     z-index: 9999;
+    overflow-x: hidden; 
+    overflow:hidden;
+
 }
 #loading-center{
     width: 100%;
@@ -840,7 +850,7 @@ Nav Menu style
 }
 .navbar-brand > img {
     display: block;
-    width: 80%;
+    width: 100%;
 }
 
 .navbar-callus li a{
@@ -1355,3 +1365,280 @@ work Section style
 .carousel-inner {
     height: 100%;
 }
+
+
+
+.feature-box
+{
+    margin: 15px 10px;
+    padding: 30px 20px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out}
+
+
+.feature-box.right
+{
+    text-align: right}
+
+
+.feature-box.right i
+{
+    float: right!important;
+    margin-left: 10px
+}
+
+
+.feature-box i
+{
+    padding: 20px;
+    font-size: 24px;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out}
+
+
+.feature-box i.circle
+{
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    behavior: url(img/PIE.htc)}
+
+
+.feature-box i.square
+{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    behavior: url(img/PIE.htc)}
+
+
+.feature-box i.rounded
+{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    behavior: url(img/PIE.htc)}
+
+
+.feature-box .separator
+{
+    margin: 0 auto}
+
+
+.feature-box h4
+{
+    margin: 30px 0 15px;
+    font-size: 16px;
+font-family: 'Roboto Condensed', sans-serif;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out}
+
+
+.feature-box.style1
+{
+    text-align: center}
+
+
+.feature-box.style1 i
+{
+    background: #3498db;
+    color: #fff}
+
+
+.feature-box.style1:hover
+{
+    background-color: #3498db}
+
+
+.feature-box.style1:hover i
+{
+    background-color: #fff;
+    color: #3498db}
+
+
+.feature-box.style1:hover h4, .feature-box.style1:hover p
+{
+    color: #fff}
+
+
+.feature-box.style2
+{
+    text-align: center}
+
+
+.feature-box.style2 i
+{
+    color: #3498db;
+    border: 1px solid #3498db}
+
+
+.feature-box.style2:hover i
+{
+    background-color: #3498db;
+    color: #fff;
+    border: 1px solid #3498db}
+
+
+.feature-box.style3
+{
+    background-color: #fff;
+    border: 1px solid transparent;
+    text-align: center}
+
+
+.feature-box.style3 i
+{
+    background: 0 0;
+    color: #2b2b2b}
+
+
+.feature-box.style3 h4
+{
+    margin: 15px 0}
+
+
+.feature-box.style3:hover
+{
+    border: 1px solid #3498db}
+
+
+.feature-box.style3:hover i
+{
+    color: #3498db}
+
+
+.feature-box.style4
+{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 30px 0}
+
+
+.feature-box.style4 i
+{
+    background: 0 0;
+    color: #2b2b2b}
+
+
+.feature-box.style4 h4
+{
+    margin: 15px 0 20px;
+    background: #eee;
+    padding: 10px}
+
+
+.feature-box.style4 p
+{
+    padding: 0 32px}
+
+
+.feature-box.style4:hover
+{
+    border: 1px solid #3498db}
+
+
+.feature-box.style4:hover i
+{
+    color: #3498db}
+
+
+.feature-box.style4:hover h4
+{
+    background-color: #3498db;
+    color: #fff}
+
+
+.feature-box.style5 i
+{
+    float: left;
+    padding: 0 10px 10px 0}
+
+
+.feature-box.style5 h4
+{
+    margin: 0;
+    padding: 5px 0 5px 37px}
+
+
+.feature-box.style5 p
+{
+    clear: both}
+
+
+.feature-box.style5:hover
+{
+    background-color: #f5f5f5}
+
+
+.feature-box.style5:hover i
+{
+    color: #3498db}
+
+
+.feature-box.style6 i
+{
+    float: left;
+    padding: 10px;
+    background: #3498db;
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px}
+
+
+.feature-box.style6 h4
+{
+    margin: 0;
+    padding: 10px 0 20px 45px}
+
+
+.feature-box.style6 p
+{
+    clear: both}
+
+
+.feature-box.style6:hover
+{
+    background-color: #f5f5f5}
+
+
+.feature-box2
+{
+    margin: 30px 10px}
+
+
+.feature-box2 .icon-holder
+{
+    float: left;
+    margin: -18px 10px 0 0}
+
+
+.feature-box2 p
+{
+    margin-top: 15px}
+
+
+.feature-box4
+{
+    margin: 30px 10px;
+    background: #f9f9f9;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.07);
+    }
+
+
+.feature-box4 i
+{
+    font-size: 60px;
+    color: #3498db}
+
+

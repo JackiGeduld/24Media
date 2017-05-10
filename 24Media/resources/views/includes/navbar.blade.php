@@ -1,21 +1,8 @@
- <nav class="navbar navbar-default bootsnav navbar-fixed">
-      
-                <!-- Start Top Search -->
-                <div class="top-search">
-                    <div class="container">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                            <input type="text" class="form-control" placeholder="Search">
-                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Top Search -->
+ <nav class="navbar navbar-default bootsnav navbar-fixed" style="z-index: 1000 !important">      
 
                 <div class="container"> 
                     <div class="attr-nav">
                         <ul>
-                            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
                         </ul>
                     </div> 
 
@@ -24,11 +11,11 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
                         </button>
+                        <div class="logo-con">
                         <a class="navbar-brand" href="#brand">
-                       <h4>Logo</h4>
-                            <!--<img src="{!! asset('/footer-logo.png" class="logo logo-scrolled" alt="">-->
+                            <img src="{!! asset('image/logo.png') !!}" class="logo logo-scrolled" alt="">
                         </a> 
-                      
+                      </div>
 
                     </div>
                     <!-- End Header Navigation -->

@@ -7,9 +7,6 @@
     <head>
            @include('includes.head')
 
-           @include('includes.sidebar')
-
-
     </head>
 
     <body data-spy="scroll" data-target=".navbar-collapse">
@@ -25,12 +22,16 @@
                 </div>
             </div>
         </div><!--End off Preloader -->
+
          @include('includes.navbar')
+
+          @include('includes.sidebar')
+             
+            
         <div class="culmn">
             <!--Home page style-->
-
-            @yield('index')
-             @yield('plan')
+            <!-- @yield('index') -->
+            @yield('plan')
    
        </div>
 

@@ -8,10 +8,12 @@
 
         <!--Google Font link-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans+Condensed:300|Roboto+Condensed" rel="stylesheet">
 
- 
-         
-        <link rel="stylesheet" href="{!! asset('css/bootstrap.css') !!}">
+<link href="https://fonts.googleapis.com/css?family=Marvel" rel="stylesheet">
+
+         <link rel="stylesheet" href="{!! asset('css/bootstrap.css') !!}">
         <link rel="stylesheet" href="{!! asset('css/slick/slick.css') !!}"> 
         <link rel="stylesheet" href="{!! asset('css/slick/slick-theme.css') !!}">
         <link rel="stylesheet" href="{!! asset('css/animate.css') !!}">
@@ -19,6 +21,7 @@
         <link rel="stylesheet" href="{!! asset('css/font-awesome.min.css') !!}">
         <link rel="stylesheet" href="{!! asset('css/magnific-popup.css') !!}">
         <link rel="stylesheet" href="{!! asset('css/bootsnav.css') !!}">
+        <link rel="stylesheet" href="{!! asset('css/simple-line-icons.css') !!}">
 
 
         <!-- xsslider slider css -->
@@ -50,7 +53,7 @@
     z-index: 1000;
     position: fixed;
     left: 100%;
-    top: 80px;
+    top: 86px;
     width: 0;
     height: 100%;
     margin-left: -240px;
@@ -248,22 +251,27 @@
     
 }
 
+
+
 .business{
-    background: url(../image/image2.jpeg) no-repeat;
     background-size: cover;
     color: #fff;
-    padding-top: 6.25%;
-    padding-bottom: 6.25%;
-    height: 430px;
+
+    height: 500px;
+    width: 100%;
 
 }
 
 #overlay {
-left:0;
-width:100%;
-height:100%;
-background:green !important;
-opacity:0.8;
+
+position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.9); /*dim the background*/
+
 }
 
 
@@ -352,12 +360,20 @@ opacity:0.8;
       bottom: 0;
 }
 
-.carousel-caption h2, .carousel-caption h3, .carousel-caption h1 {
-    display:table-cell;
+.carousel-caption h2, .carousel-caption h3, .carousel-caption h1{
+    display: table-cell;
     vertical-align: middle;
     text-align:left;
     color: #fff;
 }
+
+ .carousel-caption h4 {
+     right: 200px !important;
+    vertical-align: bottom;
+    text-align:left;
+    color: #fff;
+}
+
 
 .slider {
   height: 18px;
@@ -428,6 +444,9 @@ background: linear-gradient(
 .input{
   height: 25px !important;
   margin-top: 8px;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 40px #000000;
 }
 
 
@@ -445,6 +464,199 @@ background: linear-gradient(
     background-size: cover;
     -o-background-size: cover;
 }
+
+.image{
+
+     max-width: 100%;
+     background-position: bottom ;
+}
+
+.business-image {
+max-width: 100%;
+position: relative; 
+
+
+}
+
+.img-overlay {
+    position: relative;
+    max-width: 100%;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    color: #fff;
+    padding: 50%;
+    padding: 50%;
+}
+
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    color: #fff;
+    padding: 50%;
+    padding: 50%;
+}
+
+#item{
+
+   position: absolute; 
+   top: 50px; 
+   text-align: center;
+   width: 100%; 
+   color: #fff;
+   z-index: 1000;
+
+
+}
+.img-overlay h2{
+
+ position: absolute; 
+   top: 50px; 
+   text-align: center;
+   width: 100%; 
+   color: #fff;
+   z-index: 1000;
+
+}
+
+
+.img-overlay p{
+
+   position: absolute; 
+   top: 130px; 
+   text-align: justify;
+   width: 100%; 
+   color: #fff;
+   z-index: 10000;
+   margin: 0 auto;
+   padding: 30px;
+
+}
+
+.ghost-btn {
+
+    background: transparent;
+    color: #F2F2F2;
+    /* CSS Transition */
+    -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -ms-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+     transition: background .2s ease-in-out, border .2s ease-in-out;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+     border-radius:  0;
+     z-index: 10000;
+
+}
+/* Menu buttons hover */
+ .ghost-btn:hover {
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    background-color: #A94442;
+    color: #ffffff;
+}
+.ghost-btn:focus {
+    outline: none;
+}
+
+#carouselButtons {
+    margin-left: 100px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1000
+}
+
+#box:hover{
+
+background-color: #f1f1f1;
+}
+
+
+
+.logo-con{
+
+    width:100px;
+    height:80px;
+    position: relative;
+    right: 80px;
+    margin-left: 75px;
+    margin-top: 5px
+}
+
+.logo-con img {
+
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+}
+
+.icon-ben {
+
+ width: 150px !important;
+
+}
+
+.glyphicon-ring {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+   border-width: 5px;
+  color: white;
+  display: inline-table;
+  text-align: center;
+  margin: 0 auto !important;
+}
+/**CSS FOR ICON WITH NO BACKGROUND COLOR**/
+
+.glyphicon-ring .glyphicon-bordered {
+  font-size: 100px;
+  vertical-align: middle;
+  display: table-cell;
+}
+/**WITH AN ADDED BACKGROUND COLOR**/
+
+.glyphicon-white {
+  background: #f5f5f5;
+  color: black;
+  border: 7px solid #FF8C00;
+   margin: 0 auto !important;
+}
+.glyphicon-teal {
+  background: teal;
+  color: orange;
+}
+
+.inner-icon{
+    margin-top: 20%;
+    width: 60% !important;
+
+}
+
+.product{
+
+background: #e5e5e5;;
+
+}
+
+.justify{
+
+    text-align: justify;
+}
+
 
 </style>
 

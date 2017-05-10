@@ -46,7 +46,7 @@
              required="" >
             <div class="errors"> {{ $errors->first('IdNumber') }} </div>
 
-            <input type="submit" style="margin-top: 15px; padding: 1px" class="btn btn-primary btn-sm btn-block" Placeholder="Get Quote"
+            <input type="submit" style="margin-top: 15px; padding: 1px;" class="btn btn-primary btn-sm btn-block" Placeholder="Get Quote"
              required="" >
 
             </form>
